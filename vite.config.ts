@@ -8,7 +8,7 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': import.meta.dirname,
         'firebase/app': '@firebase/app',
         'firebase/auth': '@firebase/auth',
       },
